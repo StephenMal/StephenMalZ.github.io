@@ -21,6 +21,7 @@
 
     <!-- github calendar css -->
     <!--<link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">-->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
     <!-- github activity css -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
@@ -87,7 +88,6 @@
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-lg-8 col-12">
-
                <section class="latest section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading"> Featured Projects</h2>
@@ -133,6 +133,20 @@
                         </div>
                     </div>
                 </section>
+
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Github Activity</h2>
+                        <div class="calendar">
+                          <!-- Loading stuff -->
+                           Loading the data just for you.
+                           <a class="btn btn-cta-secondary" href="https://github.com/Stephen527" target="_blank">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
+                        </div>
+                        <script>
+                           GitHubCalendar(".calendar", "Stephen527", { responsive: true });
+                        </script>
+                    </div><!--//section-inner-->
+                </section><!--//section-->
 
                 <section class="projects section">
                     <div class="section-inner shadow-sm rounded">
